@@ -1,0 +1,1044 @@
+Complete HTML5 Example — Using All Important HTML Tags
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- <base> : Sets the base URL -->
+    <base href="./">
+
+    <!-- <title> : Browser tab title -->
+    <title>Complete HTML5 Example</title>
+
+    <!-- <meta> : Gives information about webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML5 Tags Example">
+
+    <!-- <link> : Connects external CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style> : Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            padding: 20px;
+            background: lightblue;
+        }
+
+        section, article, aside {
+            margin: 20px 0;
+            padding: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
+
+<header>
+
+    <!-- <hgroup> : Groups headings -->
+    <hgroup>
+        <h1>My Complete HTML5 Website</h1>
+        <h2>Learning HTML in Easy Way</h2>
+    </hgroup>
+
+    <!-- <nav> : Navigation -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- ================================================= -->
+<!-- MAIN -->
+<!-- ================================================= -->
+
+<main id="home">
+
+    <!-- <section> : Groups related content -->
+    <section>
+
+        <h2>Welcome to My Website</h2>
+
+        <!-- <p> : Paragraph -->
+        <p>
+            Welcome to my website. I am learning
+            <strong>HTML</strong> and
+            <em>web development</em>.
+        </p>
+
+        <!-- Text formatting tags -->
+
+        <p>
+            This is <b>bold text</b>.
+            This is <strong>important text</strong>.
+            This is <i>italic text</i>.
+            This is <em>emphasized text</em>.
+            This is <u>underlined text</u>.
+        </p>
+
+        <p>
+            This is <mark>highlighted text</mark>.
+            This is <small>small text</small>.
+            This is <del>deleted text</del>.
+            This is <ins>inserted text</ins>.
+        </p>
+
+        <!-- <sub> and <sup> -->
+        <p>
+            Water formula: H<sub>2</sub>O
+        </p>
+
+        <p>
+            Mathematics: x<sup>2</sup> + y<sup>2</sup>
+        </p>
+
+        <!-- <s> -->
+        <p>
+            <s>Old Price: ₹1000</s>
+        </p>
+
+        <!-- <abbr> -->
+        <p>
+            <abbr title="HyperText Markup Language">
+                HTML
+            </abbr>
+            is used to create webpages.
+        </p>
+
+        <!-- <q> : Short quotation -->
+        <p>
+            My teacher says:
+            <q>Practice HTML every day.</q>
+        </p>
+
+        <!-- <blockquote> : Long quotation -->
+        <blockquote>
+            HTML is the standard markup language used
+            to create the structure of webpages.
+        </blockquote>
+
+        <!-- <cite> -->
+        <p>
+            My favorite book is
+            <cite>HTML and CSS</cite>.
+        </p>
+
+        <!-- <code> -->
+        <p>
+            Example code:
+            <code>print("Hello World")</code>
+        </p>
+
+        <!-- <kbd> -->
+        <p>
+            To copy text press:
+            <kbd>Ctrl + C</kbd>
+        </p>
+
+        <!-- <samp> -->
+        <p>
+            Computer output:
+            <samp>Hello World!</samp>
+        </p>
+
+        <!-- <var> -->
+        <p>
+            Mathematical variable:
+            <var>x</var>
+        </p>
+
+        <!-- <time> -->
+        <p>
+            Class starts at
+            <time>10:00</time>.
+        </p>
+
+        <!-- <data> -->
+        <p>
+            Product:
+            <data value="101">Laptop</data>
+        </p>
+
+        <!-- <bdi> -->
+        <p>
+            Student:
+            <bdi>Rashmi</bdi>
+        </p>
+
+        <!-- <bdo> : Changes text direction -->
+        <p>
+            Right-to-left:
+            <bdo dir="rtl">Hello World</bdo>
+        </p>
+
+        <!-- <wbr> : Possible line break -->
+        <p>
+            VeryLongWord<wbr>Example
+        </p>
+
+        <!-- <br> : Line break -->
+        <p>
+            Hello<br>
+            Welcome<br>
+            Students
+        </p>
+
+        <!-- <hr> : Horizontal line -->
+        <hr>
+
+        <!-- <pre> : Preformatted text -->
+        <pre>
+Name    : Rashmi
+Course  : CSE
+Subject : HTML
+        </pre>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- IMAGE -->
+    <!-- ================================================= -->
+
+    <section id="about">
+
+        <h2>Images</h2>
+
+        <!-- <figure> -->
+        <figure>
+
+            <!-- <img> -->
+            <img
+                src="./Studentmangmentsystem.jpg"
+                alt="Student Image"
+                width="300"
+            >
+
+            <!-- <figcaption> -->
+            <figcaption>
+                Figure 1: Student Image
+            </figcaption>
+
+        </figure>
+
+
+        <!-- <picture> -->
+        <picture>
+
+            <source
+                media="(min-width: 800px)"
+                srcset="large.jpg"
+            >
+
+            <source
+                media="(min-width: 400px)"
+                srcset="medium.jpg"
+            >
+
+            <img
+                src="./Studentmangmentsystem.jpg"
+                alt="Responsive Image"
+                width="300"
+            >
+
+        </picture>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- IMAGE MAP -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Image Map</h2>
+
+        <!-- <map> creates an image map -->
+
+        <img
+            src="computer.jpg"
+            alt="Computer"
+            usemap="#computerMap"
+            width="400"
+        >
+
+        <map name="computerMap">
+
+            <!-- <area> creates clickable area -->
+            <area
+                shape="rect"
+                coords="0,0,200,200"
+                href="https://www.google.com"
+                alt="Google"
+            >
+
+        </map>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- AUDIO -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Audio</h2>
+
+        <!-- <audio> -->
+        <audio controls>
+
+            <!-- <source> -->
+            <source
+                src="song.mp3"
+                type="audio/mpeg"
+            >
+
+            Your browser does not support audio.
+
+        </audio>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- VIDEO -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Video</h2>
+
+        <!-- <video> -->
+        <video
+            width="500"
+            controls
+        >
+
+            <!-- <source> -->
+            <source
+                src="video.mp4"
+                type="video/mp4"
+            >
+
+            <!-- <track> : Subtitles -->
+            <track
+                src="subtitle.vtt"
+                kind="subtitles"
+                srclang="en"
+                label="English"
+            >
+
+            Your browser does not support video.
+
+        </video>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- LIST -->
+    <!-- ================================================= -->
+
+    <section id="courses">
+
+        <h2>My Courses</h2>
+
+        <!-- <ul> : Unordered list -->
+        <h3>Unordered List</h3>
+
+        <ul>
+
+            <!-- <li> -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+        </ul>
+
+
+        <!-- <ol> : Ordered list -->
+
+        <h3>Ordered List</h3>
+
+        <ol>
+
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn JavaScript</li>
+
+        </ol>
+
+
+        <!-- <dl> : Description list -->
+
+        <h3>Description List</h3>
+
+        <dl>
+
+            <!-- <dt> : Term -->
+            <dt>HTML</dt>
+
+            <!-- <dd> : Description -->
+            <dd>
+                HTML creates webpage structure.
+            </dd>
+
+            <dt>CSS</dt>
+
+            <dd>
+                CSS styles the webpage.
+            </dd>
+
+        </dl>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- ARTICLE -->
+    <!-- ================================================= -->
+
+    <article>
+
+        <h2>What is HTML?</h2>
+
+        <p>
+            HTML stands for
+            <strong>HyperText Markup Language</strong>.
+        </p>
+
+        <p>
+            HTML is used to create the
+            structure of a webpage.
+        </p>
+
+    </article>
+
+
+    <!-- ================================================= -->
+    <!-- ASIDE -->
+    <!-- ================================================= -->
+
+    <aside>
+
+        <h3>Related Information</h3>
+
+        <p>
+            You should also learn CSS and JavaScript.
+        </p>
+
+    </aside>
+
+
+    <!-- ================================================= -->
+    <!-- TABLE -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Student Table</h2>
+
+        <!-- <table> -->
+        <table>
+
+            <!-- <caption> -->
+            <caption>
+                Student Details
+            </caption>
+
+            <!-- <colgroup> and <col> -->
+            <colgroup>
+
+                <col span="1">
+                <col span="1">
+
+            </colgroup>
+
+
+            <!-- <thead> -->
+            <thead>
+
+                <!-- <tr> : Table row -->
+                <tr>
+
+                    <!-- <th> : Table heading -->
+                    <th>Name</th>
+                    <th>Age</th>
+
+                </tr>
+
+            </thead>
+
+
+            <!-- <tbody> -->
+            <tbody>
+
+                <tr>
+
+                    <!-- <td> : Table data -->
+                    <td>Rashmi</td>
+                    <td>21</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Rahul</td>
+                    <td>22</td>
+
+                </tr>
+
+            </tbody>
+
+
+            <!-- <tfoot> -->
+            <tfoot>
+
+                <tr>
+
+                    <td colspan="2">
+                        Total Students: 2
+                    </td>
+
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- FORM -->
+    <!-- ================================================= -->
+
+    <section id="contact">
+
+        <h2>Registration Form</h2>
+
+        <!-- <form> -->
+
+        <form>
+
+            <!-- <fieldset> : Groups form elements -->
+
+            <fieldset>
+
+                <!-- <legend> : Fieldset title -->
+                <legend>
+                    Personal Information
+                </legend>
+
+
+                <!-- <label> -->
+                <label for="name">
+                    Name:
+                </label>
+
+                <!-- <input> -->
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+
+                <br><br>
+
+
+                <label for="email">
+                    Email:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email"
+                >
+
+                <br><br>
+
+
+                <label for="password">
+                    Password:
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                >
+
+                <br><br>
+
+
+                <!-- Radio button -->
+
+                <label>Gender:</label>
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                >
+                Male
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                >
+                Female
+
+                <br><br>
+
+
+                <!-- Checkbox -->
+
+                <label>Skills:</label>
+
+                <input
+                    type="checkbox"
+                    name="skill"
+                    value="html"
+                >
+                HTML
+
+                <input
+                    type="checkbox"
+                    name="skill"
+                    value="css"
+                >
+                CSS
+
+                <input
+                    type="checkbox"
+                    name="skill"
+                    value="javascript"
+                >
+                JavaScript
+
+                <br><br>
+
+
+                <!-- <select> -->
+
+                <label for="country">
+                    Country:
+                </label>
+
+                <select id="country">
+
+                    <!-- <optgroup> -->
+
+                    <optgroup label="Asia">
+
+                        <!-- <option> -->
+                        <option>India</option>
+                        <option>Japan</option>
+                        <option>China</option>
+
+                    </optgroup>
+
+                    <optgroup label="Europe">
+
+                        <option>Germany</option>
+                        <option>France</option>
+
+                    </optgroup>
+
+                </select>
+
+                <br><br>
+
+
+                <!-- <textarea> -->
+
+                <label for="message">
+                    Message:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    cols="30"
+                    placeholder="Write your message"
+                ></textarea>
+
+                <br><br>
+
+
+                <!-- <datalist> -->
+
+                <label for="browser">
+                    Choose Browser:
+                </label>
+
+                <input
+                    list="browsers"
+                    id="browser"
+                >
+
+                <datalist id="browsers">
+
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Edge">
+                    <option value="Safari">
+
+                </datalist>
+
+                <br><br>
+
+
+                <!-- <output> -->
+
+                <label>
+                    Result:
+                </label>
+
+                <output>
+                    100
+                </output>
+
+                <br><br>
+
+
+                <!-- <progress> -->
+
+                <label>
+                    Course Progress:
+                </label>
+
+                <progress
+                    value="70"
+                    max="100"
+                >
+                    70%
+                </progress>
+
+                <br><br>
+
+
+                <!-- <meter> -->
+
+                <label>
+                    Skill Level:
+                </label>
+
+                <meter
+                    value="8"
+                    min="0"
+                    max="10"
+                >
+                    8/10
+                </meter>
+
+                <br><br>
+
+
+                <!-- <button> -->
+
+                <button type="submit">
+                    Submit
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- DETAILS -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Frequently Asked Question</h2>
+
+        <!-- <details> -->
+
+        <details>
+
+            <!-- <summary> -->
+
+            <summary>
+                What is HTML?
+            </summary>
+
+            <p>
+                HTML is used to create the structure
+                of a webpage.
+            </p>
+
+        </details>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- DIALOG -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Dialog Example</h2>
+
+        <!-- <dialog> -->
+
+        <dialog open>
+
+            <p>
+                Welcome to my website!
+            </p>
+
+            <button>
+                Close
+            </button>
+
+        </dialog>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- IFRAME -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Iframe</h2>
+
+        <!-- <iframe> -->
+
+        <iframe
+            src="https://example.com"
+            width="500"
+            height="200"
+            title="Example Website"
+        >
+        </iframe>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- EMBED -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Embedded Content</h2>
+
+        <!-- <embed> -->
+
+        <embed
+            src="document.pdf"
+            width="400"
+            height="300"
+        >
+
+        <!-- <object> -->
+
+        <object
+            data="document.pdf"
+            width="400"
+            height="300"
+        >
+        </object>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- CANVAS -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Canvas</h2>
+
+        <!-- <canvas> -->
+
+        <canvas
+            id="myCanvas"
+            width="400"
+            height="200"
+            style="border:1px solid black;"
+        >
+            Your browser does not support canvas.
+        </canvas>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- SVG -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>SVG</h2>
+
+        <!-- <svg> -->
+
+        <svg
+            width="200"
+            height="100"
+        >
+
+            <rect
+                width="150"
+                height="80"
+                fill="blue"
+            />
+
+            <circle
+                cx="50"
+                cy="40"
+                r="20"
+                fill="red"
+            />
+
+        </svg>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- SEARCH -->
+    <!-- ================================================= -->
+
+    <section>
+
+        <h2>Search</h2>
+
+        <!-- <search> -->
+
+        <search>
+
+            <form>
+
+                <input
+                    type="search"
+                    placeholder="Search..."
+                >
+
+                <button>
+                    Search
+                </button>
+
+            </form>
+
+        </search>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- TEMPLATE -->
+    <!-- ================================================= -->
+
+    <!-- <template> -->
+
+    <template id="studentTemplate">
+
+        <div>
+
+            <h3>Student Card</h3>
+
+            <p>Student information</p>
+
+        </div>
+
+    </template>
+
+
+    <!-- ================================================= -->
+    <!-- SLOT -->
+    <!-- ================================================= -->
+
+    <!-- <slot> is normally used inside Web Components -->
+
+    <div>
+
+        <slot name="student">
+            Student Information
+        </slot>
+
+    </div>
+
+
+</main>
+
+
+<!-- ================================================= -->
+<!-- ADDRESS -->
+<!-- ================================================= -->
+
+<address>
+
+    Contact us:<br>
+    Email: example@gmail.com<br>
+    Phone: +91 9876543210
+
+</address>
+
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<footer>
+
+    <p>
+        Copyright © 2026 My Website
+    </p>
+
+    <p>
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
+

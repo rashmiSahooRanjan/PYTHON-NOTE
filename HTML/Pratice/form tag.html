@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- form tag :- it is used to creaet the form. -->
+<!-- input tag :- it is used to creates the input field in the form -->
+<!-- label tag :- it is used for an input. input id and label required same -->
+<!-- text area tag ;- it is used for multiline text input -->
+<!-- button tag :- it is used to create the button and help to submit the form -->
+<!-- select tag :- it is used to  creates the dropdown menu -->
+<!-- option tag :- it is used in select tag for dropdown option -->
+<!-- optgroup tag :- it is used for groups dropdown option -->
+<!--datalist tag :- it is used for provides suggestion for input -->
+<!-- field set tag :- it is used for groups from controls -->
+<!-- legend tag :- it is used for title for field set -->
+<!-- output tag :- it is used for display the calculation -->
+<!-- progress tag :- it is used for shows progress -->
+<!-- metre tag :- it is used for shows measurement  within a range-->
+
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form>
+
+    <!-- fieldset tag :- groups form controls -->
+    <fieldset>
+
+        <!-- legend tag :- title for fieldset -->
+        <legend>Personal Information</legend>
+
+        <!-- label + input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <!-- input tag -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <!-- datalist tag :- provides suggestions -->
+        <label for="city">City:</label>
+        <input list="cities" id="city" name="city">
+
+        <datalist id="cities">
+            <option value="Bhubaneswar">
+            <option value="Cuttack">
+            <option value="Kolkata">
+            <option value="Delhi">
+        </datalist>
+
+        <br><br>
+
+        <!-- textarea tag :- multiline text input -->
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="address" rows="4" cols="40"></textarea>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+
+        <legend>Course Information</legend>
+
+        <!-- select tag + option tag -->
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course">
+
+            <!-- optgroup tag :- groups dropdown options -->
+            <optgroup label="Computer Science">
+                <option value="cse">CSE</option>
+                <option value="aiml">AI & ML</option>
+                <option value="ds">Data Science</option>
+            </optgroup>
+
+            <optgroup label="Engineering">
+                <option value="mechanical">Mechanical</option>
+                <option value="civil">Civil</option>
+                <option value="ece">ECE</option>
+            </optgroup>
+
+        </select>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+
+        <legend>Progress and Marks</legend>
+
+        <!-- output tag :- displays calculation -->
+        <label>Marks:</label>
+
+        <input type="number" id="marks" value="80"
+               oninput="result.value = marks.value">
+
+        <output name="result" for="marks">80</output>
+
+        <br><br>
+
+        <!-- progress tag :- shows progress -->
+        <label>Course Completion:</label>
+
+        <progress value="70" max="100"></progress>
+        70%
+
+        <br><br>
+
+        <!-- meter tag :- shows measurement within a range -->
+        <label>Performance:</label>
+
+        <meter value="0.8" min="0" max="1">
+            80%
+        </meter>
+
+    </fieldset>
+
+    <br>
+
+    <!-- button tag :- creates button -->
+    <button type="submit">Submit Registration</button>
+
+    </form>
+    </body>
+    </html>

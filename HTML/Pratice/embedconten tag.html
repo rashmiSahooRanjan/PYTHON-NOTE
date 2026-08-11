@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- iframe :- it is used for Embeds another webpage/video -->
+     <!-- <embed> :-it is used for Embeds external content -->
+    <!-- <object>:- it is used for Embeds external resource -->
+    <!-- <picture>:- it is used for Provides different images for different situations -->
+    <!-- <canvas>:- it iis used for Creates drawing/graphics area using JavaScript -->
+    <!-- <svg> :- it is used for Creates vector graphics -->
+        <h1>HTML Multimedia Page</h1>
+
+
+    <!-- iframe :- it is used for Embeds another webpage/video -->
+    <h2>1. Iframe</h2>
+
+    <iframe
+        width="500"
+        height="300"
+        src="https://www.youtube.com/live/rKuf1xSfZUM?si=-sAGm6NNSOTVvaZX"
+        title="YouTube Video">
+    </iframe>
+
+
+    <!-- embed :- it is used for Embeds external content -->
+    <h2>2. Embed</h2>
+
+    <embed
+        src="sample.pdf"
+        type="application/pdf"
+        width="500"
+        height="300">
+
+
+    <!-- object :- it is used for Embeds external resource -->
+    <h2>3. Object</h2>
+
+    <object
+        data="sample.pdf"
+        type="application/pdf"
+        width="500"
+        height="300">
+        PDF cannot be displayed.
+    </object>
+
+
+    <!-- picture :- it is used for Provides different images for different situations -->
+    <h2>4. Picture</h2>
+
+    <picture>
+
+        <!-- Shows large image on larger screens -->
+        <source media="(min-width: 800px)"
+                srcset="large.jpg">
+
+        <!-- Shows small image on smaller screens -->
+        <source media="(max-width: 799px)"
+                srcset="small.jpg">
+
+        <!-- Default image -->
+        <img src="default.jpg"
+             alt="Beautiful Nature"
+             width="500">
+
+    </picture>
+
+
+    <!-- canvas :- it is used for Creates drawing/graphics area using JavaScript -->
+    <h2>5. Canvas</h2>
+
+    <canvas id="myCanvas"
+            width="500"
+            height="200"
+            style="border:1px solid black;">
+    </canvas>
+
+    <script>
+
+        // Get the canvas
+        let canvas = document.getElementById("myCanvas");
+
+        // Get drawing area
+        let ctx = canvas.getContext("2d");
+
+        // Draw a rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 200, 100);
+
+        // Write text
+        ctx.fillStyle = "black";
+        ctx.font = "25px Arial";
+        ctx.fillText("Hello Canvas", 80, 110);
+
+    </script>
+
+
+    <!-- svg :- it is used for Creates vector graphics -->
+    <h2>6. SVG</h2>
+
+    <svg width="500" height="250"
+         style="border:1px solid black;">
+
+        <!-- Create a circle -->
+        <circle
+            cx="100"
+            cy="100"
+            r="60"
+            fill="blue">
+        </circle>
+
+        <!-- Create a rectangle -->
+        <rect
+            x="200"
+            y="50"
+            width="150"
+            height="100"
+            fill="green">
+        </rect>
+
+        <!-- Create text -->
+        <text
+            x="210"
+            y="190"
+            font-size="25">
+            SVG Graphics
+        </text>
+
+    </svg>
+
+</body>
+</html>
